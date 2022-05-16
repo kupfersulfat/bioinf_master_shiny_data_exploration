@@ -1,1 +1,1 @@
-# bioinf_master_shiny_data_exploration
+# shiny_data_exploration
