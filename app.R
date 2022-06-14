@@ -19,27 +19,27 @@ data("Titanic")
 
 #setting work directory and include files
 here::i_am("app.R")
-source(here("bsp1.R"), encoding = "utf-8")
-source(here("bsp2.R"), encoding = "utf-8")
-source(here("bsp3.R"), encoding = "utf-8")
-source(here("bsp4.R"), encoding = "utf-8")
+source(here("swiss.R"), encoding = "utf-8")
+source(here("state.R"), encoding = "utf-8")
+source(here("LakeHuron.R"), encoding = "utf-8")
+source(here("Titanic.R"), encoding = "utf-8")
 
 ui <- fluidPage(
   theme = shinytheme("yeti"),
   tabsetPanel(
-    tabPanel("Bsp. 1", title_1,
+    tabPanel("swiss", title_1,
              sidebarpanel_1
     ),
     
-    tabPanel("Bsp. 2", title_2,
+    tabPanel("state.x77", title_2,
              sidebarpanel_2
     ),
     
-    tabPanel("Bsp. 3", title_3,
+    tabPanel("LakeHuron", title_3,
              sidebarpanel_3
     ),
     
-    tabPanel("Bsp. 4", title_4,
+    tabPanel("Titanic", title_4,
              sidebarpanel_4
     )
   )
